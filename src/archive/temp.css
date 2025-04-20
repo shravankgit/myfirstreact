@@ -1,0 +1,11 @@
+.container {
+    border: 2px solid #333; /* dark gray border */
+    background-color: #f0f0f0; /* light gray background */
+    padding: 10px;
+    width: fit-content;
+  }
+  
+  .para {
+    color: #007BFF; /* blue text */
+    font-size: 16px}
+    

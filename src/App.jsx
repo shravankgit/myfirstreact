@@ -3,10 +3,27 @@
 
 
 import React from 'react'
+import './App.css'
+
+let a = "grap"
+let b = "banana"
+
 
 function App() {
   return (
-    <div></div>
+    
+    <div className = "container">
+      <p className = "para">This is paragraph </p>
+      
+      <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCZlf5lc5tX-0gY-y94pGS0mQdL-D0lCH2OQ&s" />
+      
+    </div>
+    
+    
+    // <section>
+    //   <h1> I like {a},{b} </h1>
+    // </section>
+    
   )
 }
 

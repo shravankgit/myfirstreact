@@ -1,8 +1,8 @@
 import React from 'react'
 
-const SecondComp = () => {
+const SecondComp = (props) => {
   return (
-    <div>SecondComp</div>
+    <div>{props.name}</div>
   )
 }
 

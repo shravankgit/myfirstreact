@@ -17,8 +17,8 @@ function App() {
   return (
 
     <div className="container">
-      <FirstComp />
-      <SecondComp />
+      <FirstComp name="first data from main comp" />
+      <SecondComp name="2nd comp props" />
       <ThirdComp />
       <FourthComp />
     </div>

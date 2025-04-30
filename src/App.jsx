@@ -17,13 +17,21 @@ const user={
   city:"nslpt",
   area:"busstop"
 }
+
+const myCar = {
+  model: "maruti",
+  year: 2024,
+  dealer:"nixon",
+  color: "black"
+}
+
 function App() {
   return (
 
     <div className="container">
       <FirstComp name={user.name} />
       <SecondComp name={user.city} />
-      <ThirdComp name="Kalyani" />
+      <ThirdComp car={myCar} />
       <FourthComp name="Ashritha" />
     </div>
 

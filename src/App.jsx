@@ -8,6 +8,7 @@ import FirstComp from './props_container/FirstComp'
 import SecondComp from './props_container/SecondComp'
 import ThirdComp from './props_container/ThirdComp'
 import FourthComp from './props_container/FourthComp'
+import StateMgm from './StateMgm'
 
 let a = "grap"
 let b = "banana"
@@ -29,10 +30,15 @@ function App() {
   return (
 
     <div className="container">
-      <FirstComp name={user.name} />
+      {/* <FirstComp name={user.name} />
       <SecondComp name={user.city} />
       <ThirdComp car={myCar} />
-      <FourthComp name="Ashritha" />
+      <FourthComp name="Ashritha" /> */}
+      
+      <StateMgm />
+      
+      
+      
     </div>
 
 

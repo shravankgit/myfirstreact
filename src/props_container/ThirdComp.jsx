@@ -1,8 +1,10 @@
 import React from 'react'
 
-const ThirdComp = () => {
+const ThirdComp = (props) => {
+  console.log(props);
+  
   return (
-    <div>ThirdComp</div>
+    <div>{props.name}</div>
   )
 }
 

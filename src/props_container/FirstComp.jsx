@@ -2,7 +2,7 @@ import React from 'react'
 
 const FirstComp = (props) => {
   return (
-    <div>{props.name} is used in FirstComp</div>
+    <div>{props.name} </div>
   )
 }
 

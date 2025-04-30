@@ -1,8 +1,10 @@
 import React from 'react'
 
-const FourthComp = () => {
+const FourthComp = (props) => {
+  console.log(props);
+  
   return (
-    <div>FourthComp</div>
+    <div>{props.name} </div>
   )
 }
 

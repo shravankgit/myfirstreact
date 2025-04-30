@@ -12,15 +12,19 @@ import FourthComp from './props_container/FourthComp'
 let a = "grap"
 let b = "banana"
 
-
+const user={
+  name:"mounika",
+  city:"nslpt",
+  area:"busstop"
+}
 function App() {
   return (
 
     <div className="container">
-      <FirstComp name="first data from main comp" />
-      <SecondComp name="2nd comp props" />
-      <ThirdComp />
-      <FourthComp />
+      <FirstComp name={user.name} />
+      <SecondComp name={user.city} />
+      <ThirdComp name="Kalyani" />
+      <FourthComp name="Ashritha" />
     </div>
 
 

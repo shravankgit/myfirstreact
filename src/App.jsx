@@ -9,36 +9,48 @@ import SecondComp from './props_container/SecondComp'
 import ThirdComp from './props_container/ThirdComp'
 import FourthComp from './props_container/FourthComp'
 import StateMgm from './StateMgm'
+import { useState } from 'react'
+
+
+
+
 
 let a = "grap"
 let b = "banana"
 
-const user={
-  name:"mounika",
-  city:"nslpt",
-  area:"busstop"
+const user = {
+  name: "mounika",
+  city: "nslpt",
+  area: "busstop"
 }
 
 const myCar = {
   model: "maruti",
   year: 2024,
-  dealer:"nixon",
+  dealer: "nixon",
   color: "black"
 }
 
 function App() {
-  return (
+  const [sampleCondition, setSampleCondition] = useState(true)
 
+
+  return (
     <div className="container">
       {/* <FirstComp name={user.name} />
       <SecondComp name={user.city} />
       <ThirdComp car={myCar} />
       <FourthComp name="Ashritha" /> */}
-      
-      <StateMgm />
-      
-      
-      
+
+      {/* <StateMgm /> */}
+
+      <h1>Welcome to React
+        <br />
+        {sampleCondition ? <FirstComp /> : "False Statement"}
+      </h1>
+
+
+
     </div>
 
 

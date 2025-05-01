@@ -2,7 +2,9 @@ import React from 'react'
 
 const FirstComp = (props) => {
   return (
-    <div>{props.name} </div>
+    <div>{props.name} 
+    <h2>This is text message</h2>
+    </div>
   )
 }
 

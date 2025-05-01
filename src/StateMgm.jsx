@@ -11,11 +11,14 @@ const StateMgm = () => {
     // console.log(city);
 
     useEffect(() => {
-        if (city === "thorrur") {
-            setCity("board")
-        } else {
-            setCity("Hanmakonda")
-        }
+        // if (city === "thorrur1") {
+        //     setCity("board")
+        // } else {
+        //     setCity("Hanmakonda")
+        // }
+        // setCity(city === "thorrur" ? "board" : "Hanmakonda")
+        
+        setCity("mama" === "mama" ? "correct" : "incorrect")
     }, [])
 
     return (

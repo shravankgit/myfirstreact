@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 
@@ -10,15 +10,17 @@ const StateMgm = () => {
     // setCity("Delhi")
     // console.log(city);
 
-    // if (city === "thorrur") { // if thorrur bus found
-    //     setCity("board")
-    // } else {
-    //     setCity("Hanmakonda")
-    // }
-      
+    useEffect(() => {
+        if (city === "thorrur") {
+            setCity("board")
+        } else {
+            setCity("Hanmakonda")
+        }
+    }, [])
+
     return (
         <div>
-            <h1>I Live in hbhb </h1>
+            <h1>I Live in {city} </h1>
         </div>
     )
 }

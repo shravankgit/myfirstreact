@@ -1,12 +1,16 @@
 import React from 'react'
 import ClickEvent from './ClickEvent'
+import FormExample from './FormExample'
+
+import "./App.css"
 
 export const App = () => {
   return (
     <div>
       <h1>Welcome to react
         
-        <ClickEvent />
+        {/* <ClickEvent /> */}
+        <FormExample/>
       </h1>
     </div>
   )

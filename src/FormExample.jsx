@@ -1,24 +1,28 @@
 import React, { useState } from 'react'
 
 const FormExample = () => {
-    
-    const[userName,setUserName] =useState("")
-    
+
+    const [userName, setUserName] = useState("warangal")
+
     // it is a anonimous function
-    const getUserName =(event)=>{
-    //    console.log(event.target.value);
-    setUserName(event.target.value)
+    const getUserName = (event) => {
+        //    console.log(event.target.value);
+        console.log(event);
         
+        setUserName(event.target.value)
+
         // method body
     }
-    
+
     return (
         <section className='formSection' >
-            <h2>userName</h2>
+            <h2>Hello, {userName}</h2>
             <div className='inputDiv'>
-                <input type="text" placeholder='Enter your Name' onChange={getUserName}/>
-                <br></br>
-                <button className='submitBtn'>Submit</button>
+                {/* <form onSubmit={userdetails}> */}
+                    <input type="text" placeholder='Enter your Name' onChange={getUserName} />
+                    <br></br>
+                    <button className='submitBtn' type='submit'>Submit</button>
+                {/* </form> */}
             </div>
         </section>
     )

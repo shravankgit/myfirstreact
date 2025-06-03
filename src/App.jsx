@@ -3,6 +3,7 @@ import ClickEvent from './ClickEvent'
 import FormExample from './FormExample'
 
 import "./App.css"
+import SampleArray from './SampleArray'
 
 export const App = () => {
   return (
@@ -10,7 +11,8 @@ export const App = () => {
       <h1>Welcome to react
         
         {/* <ClickEvent /> */}
-        <FormExample/>
+        {/* <FormExample/> */}
+        <SampleArray/>
       </h1>
     </div>
   )

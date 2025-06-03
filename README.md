@@ -68,3 +68,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+npm
+
+node package manager
+npmjs.com
+
+marketplace
+
+feature
+dev or companies -> package or dependency
+
+css styling
+react styling
+bootstrap
+
+mui -> metirial ui
+
+react bootstrap typeahead
+https://www.npmjs.com/package/react-bootstrap-typeahead
+
+
+react toast
+
+react toastify 
+
+in node_modules
+

@@ -96,3 +96,5 @@ react toastify
 
 in node_modules
 
+https://jsonplaceholder.typicode.com/users
+

@@ -98,3 +98,27 @@ in node_modules
 
 https://jsonplaceholder.typicode.com/users
 
+=====================================================
+
+Template literals
+
+backlit key
+
+=====================================================
+
+Fetch
+
+useEffect, it is prevents to render the same component multiple times.
+
+
+==========================================
+
+post method
+
+
+=============================
+
+dom vs virtual dom
+
+
+

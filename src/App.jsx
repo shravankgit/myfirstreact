@@ -4,6 +4,10 @@ import FormExample from './FormExample'
 
 import "./App.css"
 import SampleArray from './SampleArray'
+import TempLit from './TempLit'
+import UserPage from './UserPage'
+import Employee from './Employee'
+
 
 export const App = () => {
   return (
@@ -12,7 +16,10 @@ export const App = () => {
         
         {/* <ClickEvent /> */}
         {/* <FormExample/> */}
-        <SampleArray/>
+        {/* <SampleArray/> */}
+        {/* <TempLit/> */}
+        {/* <UserPage/> */}
+        <Employee/>
       </h1>
     </div>
   )

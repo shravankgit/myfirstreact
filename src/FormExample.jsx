@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import React from 'react';
 
+import { ToastContainer, toast } from 'react-toastify';
 /* 
 input -onChange -> getUserName -> newUserDetails = userName(event.target.value)
 submit -> getNewUserDetails -> newUserDetails
@@ -10,6 +12,7 @@ const FormExample = () => {
     const [userName, setUserName] = useState("warangal")
 
     const [newUserDetails, setNewUserdetails] = useState("maha")
+    const notify = () => toast("Wow so easy!");
 
     // it is a anonimous function
     const getUserName = (event) => {
@@ -24,12 +27,14 @@ const FormExample = () => {
         e.preventDefault();
         // if (userName != "mamatha"){
         setNewUserdetails(userName)
+        notify()
         // }
     }
 
     return (
         <section className='formSection' >
             <h2>Hello {newUserDetails}</h2>
+            <ToastContainer />
             <div className='inputDiv'>
                 <form>
                     <input type="text" placeholder='Enter your Name' onChange={getUserName} />

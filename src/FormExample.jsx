@@ -29,7 +29,7 @@ const FormExample = () => {
 
     return (
         <section className='formSection' >
-            <h2>Hello,{newUserDetails}</h2>
+            <h2>Hello {newUserDetails}</h2>
             <div className='inputDiv'>
                 <form>
                     <input type="text" placeholder='Enter your Name' onChange={getUserName} />

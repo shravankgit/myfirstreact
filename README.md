@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+FormExample.jsx
+This component has the two states i.e. userName and newUserDetails.
+Immidiate modified data will reflect in the  userName set and once data is submitted then current text will be stored in the newUserDetails state

@@ -7,6 +7,8 @@ import SampleArray from './SampleArray'
 import TempLit from './TempLit'
 import UserPage from './UserPage'
 import Employee from './Employee'
+import Circuit from './Circuit'
+import MultiState from './MultiState'
 
 
 export const App = () => {
@@ -19,7 +21,9 @@ export const App = () => {
         {/* <SampleArray/> */}
         {/* <TempLit/> */}
         {/* <UserPage/> */}
-        <Employee/>
+        {/* <Employee/> */}
+        {/* <Circuit></Circuit> */}
+        <MultiState></MultiState>
       </h1>
     </div>
   )

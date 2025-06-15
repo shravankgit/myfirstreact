@@ -12,7 +12,7 @@ const FormExample = () => {
     const [userName, setUserName] = useState("warangal")
 
     const [newUserDetails, setNewUserdetails] = useState("maha")
-    const notify = () => toast("Wow so easy!");
+    const notify = () => toast("your data is uploaded sucessfully!");
 
     // it is a anonimous function
     const getUserName = (event) => {

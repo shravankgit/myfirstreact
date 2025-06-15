@@ -3,15 +3,17 @@ import ClickEvent from './ClickEvent'
 import FormExample from './FormExample'
 
 import "./App.css"
+import SampleArray from './SampleArray'
 
 export const App = () => {
   return (
-    <div>
+    <div className= "contain">
       <h1>Welcome to react
         
         {/* <ClickEvent /> */}
-        <FormExample/>
       </h1>
+      {/* <FormExample/> */}
+      <SampleArray/>
     </div>
   )
 }

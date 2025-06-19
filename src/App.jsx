@@ -2,8 +2,11 @@ import React from 'react'
 import ClickEvent from './ClickEvent'
 import FormExample from './FormExample'
 
+import UserPage from './UserPage'
+
 import "./App.css"
 import SampleArray from './SampleArray'
+import Template from './Template'
 
 export const App = () => {
   return (
@@ -14,6 +17,8 @@ export const App = () => {
       </h1>
       {/* <FormExample/> */}
       <SampleArray/>
+{/* <Template/> */}
+      {/* <UserPage/> */}
     </div>
   )
 }

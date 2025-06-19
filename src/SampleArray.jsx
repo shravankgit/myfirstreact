@@ -1,54 +1,81 @@
 import React from 'react'
 
+import { userData } from './data';
 
-// let sampleArray = ["apple", "banana", 36, {
-//     userName: "mmt",
-//     userNameS: "Shravan",
-//     userNameS1: "Shivani",
-//     userNameS2: "Shirisha",
-//     userNameS3: "Siri",
+
+let fruits = ["apple", "mango"]
+
+console.log(userData);
+
+let players = [
+    {
+        cricket: "Dhoni",
+        tennis: "sania",
+        chess: "anand",
+        hockey: "dyan chand"
+    },
+    {
+        cricket: "sachin",
+        tennis: "manasa",
+        chess: "anusha",
+        hockey: "kalyani"
+    },
+    {
+        cricket: "virat",
+        tennis: "mmt",
+        chess: "anandhi",
+        hockey: "chandhu"
+    }
+];
+
+console.log("list size: " + players.length);
+
+
+// const SampleArray = () => {
+//     return (
+//         <div>
+
+//             {players.map((item) => {
+// console.log("item value: " + item);
+
+//                 return (
+//                     <div>
+//                         <h2>my fav cricketer {item.cricket}</h2>
+//                         <h2>my fav player in tennis {item.tennis}</h2>
+//                         <h2>my fav player in chess {item.chess}</h2>
+//                         <h2>my fav player in hockey {item.hockey}</h2>
+//                     </div>
+//                 )
+//             })}
+
+//             {players[0].chess} <br></br>
+//             {players[1].tennis}  <br></br>
+//             {players[2].hockey} <br></br>
+
+//         </div>
+//     )
 // }
-// ]
-// console.log("size: " + sampleArray.length);
+
 
 const SampleArray = () => {
-    
-    // let index = 0
-    // let currentElement = sampleArray[index];
-    // console.log("current value: " + currentElement)
-    
-    // let currObjValue = sampleArray[3]["userNameS1"];
-    // let currentObjValue = sampleArray[3]["userNameS2"]
-    // let currentObjValue1 = sampleArray[3]["userNameS3"]
-    
     return (
         <div>
-            {/* {currentElement}
-            <br></br>
-            
-            {currObjValue}
-            <br></br>
-            {currentObjValue}
-            <br></br>
-            {currentObjValue1}
-            <h2>{sampleArray[0]} is red in colour</h2>
-            <h2>my age is {sampleArray[2]}</h2> */}
-            
+            {userData.map((user, index) => {
+                return (
+                    <div key={index} style={{ border: "1px solid blue" }}>
+                        <div>{user.username}</div>
+                        <div>{user.email}</div>
+                        <div>{user.address.street}</div>
+
+                    </div>
+                )
+            })}
         </div>
     )
 }
 
-// Array of objects
 
-let players=[
-   { 
-    cricket:"Dhoni",
-    tennis:"sania",
-    chess:"anand",
-    hockey:"dyan chand"
-    
-},
-];
+
 
 
 export default SampleArray

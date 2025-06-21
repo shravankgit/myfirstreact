@@ -66,3 +66,11 @@
 .formsection h2{
   color: white;
 }
+
+.trainStyle{
+  border: 1px solid gray;
+    padding: 50px;
+    margin: 12px;
+    border-radius: 8px;
+    background-color: rgb(245, 245, 245);
+}

@@ -16,9 +16,9 @@ export const App = () => {
         {/* <ClickEvent /> */}
       </h1>
       {/* <FormExample/> */}
-      <SampleArray/>
+      {/* <SampleArray/> */}
 {/* <Template/> */}
-      {/* <UserPage/> */}
+      <UserPage/>
     </div>
   )
 }

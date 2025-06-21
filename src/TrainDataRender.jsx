@@ -35,10 +35,13 @@ const TrainDataRender = () => {
   return (
     <div>
         {
-            trainData.map((trainItem)=>{
+            trainData.map((item)=>{
                 return (
                     <div>
-                        <h
+                        <h2>{item.trainName} </h2>
+                        <h3>{item.trainNo} </h3>
+                        <h3>{item.startTime} </h3>
+                        <h3>{item.endTime} </h3>
                     </div>
                 )
             })

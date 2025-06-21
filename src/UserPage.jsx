@@ -13,21 +13,25 @@ const UserPage = () => {
         const response = await fetch(userDetails)
         const newData = await response.json()
         setUser(newData)
-
     }
     
-            useEffect(() => {
+    useEffect(() => {
             console.log(userHandler());
         }, []);
 
     console.log(user);
+    console.log("total user size: "+ user.length);
 
     return (
         <div>
             {user.map((item) => {
                 return (
                     <div className='userSection'>
-                        {item.title}
+                       <h3>{item.userId}</h3>
+                       <h3>{item.id}</h3>
+                       <h2 style={{color:"blue"}}>{item.title}</h2> 
+                       <h3 style={{color:"green"}}>{item.body}</h3>
+                       
                     </div>
                 )
             })}

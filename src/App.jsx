@@ -7,6 +7,7 @@ import UserPage from './UserPage'
 import "./App.css"
 import SampleArray from './SampleArray'
 import Template from './Template'
+import TrainDataRender from './TrainDataRender'
 
 export const App = () => {
   return (
@@ -18,7 +19,8 @@ export const App = () => {
       {/* <FormExample/> */}
       {/* <SampleArray/> */}
 {/* <Template/> */}
-      <UserPage/>
+      {/* <UserPage/> */}
+      <TrainDataRender/>
     </div>
   )
 }

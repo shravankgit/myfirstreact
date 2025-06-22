@@ -9,6 +9,8 @@ const Employee = () => {
             <form>
                 <label>Employee Name</label>
                 <input type="text"/>
+                <label>Employee Role</label>
+                <input type="text"/>
             </form>
         </div>
     </div>

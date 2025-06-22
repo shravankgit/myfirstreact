@@ -108,5 +108,38 @@ feature
 array
 
 
+===================
+DOM
+
+element
+property
+
+modify
+delete
+create
+
+elements are called nodes
+
+tree structure
+DOM tree
+
+==========
+React virtual dom
+
+React created component placed in the virtual DOM.
+
+=====================
+Short circuit evalution
+
+AND
+1,1 = 1
+1,0 = 0
+0,1 = 0
+0,0 = 0
+
+
+
+
+
 
 

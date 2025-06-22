@@ -35,7 +35,7 @@ const TrainDataRender = () => {
           key={item.trainNo}
           className='trainStyle'
         >
-          <h2>{item.trainName}</h2>
+          <h2>Train Name: {item.trainName}</h2>
           <h3>Train No: {item.trainNo}</h3>
           <p>
             Start Time: {item.startTime} | End Time: {item.endTime}

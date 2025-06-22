@@ -68,9 +68,11 @@
 }
 
 .trainStyle{
-  border: 1px solid gray;
-    padding: 50px;
+  border: 1px solid rgb(49, 9, 194);
+    padding: 60px;
     margin: 12px;
     border-radius: 8px;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(202, 200, 210);
+    font-size: 15 px;
+    font-family: Arial, sans-serif;
 }

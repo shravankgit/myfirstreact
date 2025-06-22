@@ -12,10 +12,7 @@ import TrainDataRender from './TrainDataRender'
 export const App = () => {
   return (
     <div className= "contain">
-      <h1>Welcome to react
-        
-        {/* <ClickEvent /> */}
-      </h1>
+      
       {/* <FormExample/> */}
       {/* <SampleArray/> */}
 {/* <Template/> */}

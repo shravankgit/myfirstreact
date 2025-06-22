@@ -8,6 +8,7 @@ import "./App.css"
 import SampleArray from './SampleArray'
 import Template from './Template'
 import TrainDataRender from './TrainDataRender'
+import Employee from './Employee'
 
 export const App = () => {
   return (
@@ -16,8 +17,9 @@ export const App = () => {
       {/* <FormExample/> */}
       {/* <SampleArray/> */}
 {/* <Template/> */}
-      <UserPage/>
-      {/* <TrainDataRender/> */}
+      {/* <UserPage/> */}
+      <TrainDataRender/>
+      {/* <Employee/> */}
     </div>
   )
 }

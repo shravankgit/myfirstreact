@@ -6,7 +6,6 @@ const UserPage = () => {
     const [user, setUser] = useState([])
 
     const userHandler = async () => {
-
         try {
             const response = await fetch(userDetails)
             const newData = await response.json()
@@ -16,7 +15,6 @@ const UserPage = () => {
             alert("error in  gettig data")
         }
     }
-
     useEffect(() => {
         console.log(userHandler());
     }, []);

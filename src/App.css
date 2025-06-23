@@ -89,11 +89,56 @@
   border: 1px solid #ddd;
   padding: 16px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* elevation effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .trainStyle:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
+
+
+/*  
+ .trainStyle {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trainStyle:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.trainStyle {
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+}
+
+
+.trainStyle {
+  transition: transform 0.3s ease;
+}
+
+.trainStyle:hover {
+  transform: scale(1.03);
+}
+
+.trainStyle:hover {
+  box-shadow: 0 0 15px rgba(0, 128, 255, 0.6);
+}
+
+
+
+.trainStyle {
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.trainStyle:hover {
+  border: 2px solid #007bff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+} */

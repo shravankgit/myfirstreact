@@ -1,33 +1,7 @@
 import React, { useState, useEffect } from 'react'
+    import './App.css';
 
-// let trainData = [
-//   {
-//     trainName: "krishna",
-//     trainNo: 17405,
-//     startTime: "3:45",
-//     endTime: "9:45",
-//     coaches: [
-//       { coachType: "2a", cost: 760, availability: 1 },
-//       { coachType: "3a", cost: 1160, availability: 10 },
-//       { coachType: "1a", cost: 1260, availability: 1 },
-//       { coachType: "sl", cost: 195, availability: 0 }
-//     ]
-//   },
-//   {
-//     trainName: "charminar",
-//     trainNo: 12760,
-//     startTime: "9:45",
-//     endTime: "2:45",
-//     coaches: [
-//       { coachType: "2a", cost: 960, availability: 1 },
-//       { coachType: "3a", cost: 1660, availability: 10 },
-//       { coachType: "1a", cost: 130, availability: 1 },
-//       { coachType: "sl", cost: 225, availability: 0 }
-//     ]
-//   }
-// ];
-
-let trainDataUrl = "http://localhost:4005/trains"
+let trainDataUrl = "http://localhost:5000/train/get"
 
 const TrainDataRender = () => {
 
@@ -48,7 +22,7 @@ const TrainDataRender = () => {
 	}, []);
 
 	return (
-		<div>
+		<div className='grid-container'>
 			{trainData.map((item) => (
 				<div
 					key={item.trainNo}

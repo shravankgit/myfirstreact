@@ -19,9 +19,9 @@ export const App = () => {
       {/* <SampleArray/> */}
 {/* <Template/> */}
       {/* <UserPage/> */}
-      {/* <TrainDataRender/> */}
+      <TrainDataRender/>
       {/* <Employee/> */}
-      <Circuit/>
+      {/* <Circuit/> */}
     </div>
   )
 }

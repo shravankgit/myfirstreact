@@ -34,14 +34,14 @@ const Employee = () => {
       <div className="section">
         <form onSubmit={empHandler}>
           <label>Employee Name</label><br />
-          <input type="text" name="name" onChange={(e) => setName(e.target.value)} /><br />
+          <input type="text" name="name" className="inputField" onChange={(e) => setName(e.target.value)} /><br />
           <label>Employee Role</label><br />
-          <input type="text" name="role" onChange={(e) => setRole(e.target.value)} /><br />
+          <input type="text" name="role" className="inputField" onChange={(e) => setRole(e.target.value)} /><br />
           <label>Employee Email</label><br />
-          <input type="email" name="email" onChange={(e) => setEmail(e.target.value)} /><br />
+          <input type="email" name="email" className="inputField" onChange={(e) => setEmail(e.target.value)} /><br />
           <label>Employee Department</label><br />
-          <input type="text" name="dept" onChange={(e) => setDept(e.target.value)} /><br />
-          <button type="submit">Submit</button>
+          <input type="text" name="dept" className="inputField" onChange={(e) => setDept(e.target.value)} /><br />
+          <button type="submit" className="submitBtn">Submit</button>
         </form>
       </div>
     </div>

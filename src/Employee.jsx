@@ -9,12 +9,14 @@ const Employee = () => {
   const [dept, setDept] = useState("");
 
   // console.log(name, role, email,dept);
+  // console.log("name: " + name + " role: " + role + " email: " + email + " dept: " + dept);
+  
 
-  const empDetails = { name, role, email, dept } 
+  const empDetails = { name, role, email, dept }
 
   const empHandler = async (e) => {
     e.preventDefault()
-    console.log(empDetails);
+    console.log("json emp details: " + JSON.stringify(empDetails));
 
     const response = await fetch("http://localhost:5000/api/emp/add-emp", {
       method: "post",

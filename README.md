@@ -138,6 +138,21 @@ AND
 0,0 = 0
 
 
+==============================
+
+saving the employee data through post method
+
+maintaining 4 states
+empDetails contains 4 values
+async, await for calling API through post method
+
+
+==============================
+
+
+
+
+
 
 
 

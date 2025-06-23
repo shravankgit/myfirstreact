@@ -147,6 +147,9 @@ empDetails contains 4 values
 async, await for calling API through post method
 
 
+react className="empForm
+javascript class
+
 ==============================
 
 

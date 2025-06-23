@@ -144,7 +144,10 @@
 } */
 
 /* App.css or Employee.css */
-
+.empTitle{
+  font-size: 25px;
+  color: #007bff;
+}
 
 
 .empForm {

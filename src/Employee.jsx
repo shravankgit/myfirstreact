@@ -1,23 +1,12 @@
 import React, { useState } from 'react';
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Container,
-  TextField,
-  Button,
-  Alert,
-  Box
-} from '@mui/material';
-import PersonAddIcon from '@mui/icons-material/PersonAdd';
 
 const Employee = () => {
   const [name, setName] = useState("");
   const [role, setRole] = useState("");
   const [email, setEmail] = useState("");
   const [dept, setDept] = useState("");
-  const [statusMessage, setStatusMessage] = useState("");
-  const [isError, setIsError] = useState(false);
+  const [statusMessage, setStatusMessage] = useState(""); // New state for message
+  const [isError, setIsError] = useState(false); // New state for error handling
 
   const empDetails = { name, role, email, dept };
 
@@ -35,6 +24,7 @@ const Employee = () => {
       if (response.ok) {
         setStatusMessage("Employee submitted successfully!");
         setIsError(false);
+        // optionally, reset form
         setName(""); setRole(""); setEmail(""); setDept("");
       } else {
         setStatusMessage("Error: Unable to submit employee.");
@@ -47,63 +37,27 @@ const Employee = () => {
   };
 
   return (
-    <div>
-      {/* AppBar */}
-      <AppBar position="static">
-        <Toolbar>
-          <PersonAddIcon sx={{ mr: 1 }} />
-          <Typography variant="h6" component="div">
-            Employee Registration
-          </Typography>
-        </Toolbar>
-      </AppBar>
-
-      {/* Form Section */}
-      <Container maxWidth="sm" sx={{ mt: 4 }}>
+    <div className="empForm">
+      <div className="section">
+        <h2 className='empTitle'>Employee Registration Form</h2>
         <form onSubmit={empHandler}>
-          <TextField
-            fullWidth
-            label="Employee Name"
-            margin="normal"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <TextField
-            fullWidth
-            label="Employee Role"
-            margin="normal"
-            value={role}
-            onChange={(e) => setRole(e.target.value)}
-          />
-          <TextField
-            fullWidth
-            label="Employee Email"
-            type="email"
-            margin="normal"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <TextField
-            fullWidth
-            label="Employee Department"
-            margin="normal"
-            value={dept}
-            onChange={(e) => setDept(e.target.value)}
-          />
-          <Box sx={{ mt: 2 }}>
-            <Button variant="contained" type="submit" fullWidth>
-              Submit
-            </Button>
-          </Box>
+          <label>Employee Name</label><br />
+          <input type="text" value={name} className="inputField" onChange={(e) => setName(e.target.value)} /><br />
+          <label>Employee Role</label><br />
+          <input type="text" value={role} className="inputField" onChange={(e) => setRole(e.target.value)} /><br />
+          <label>Employee Email</label><br />
+          <input type="email" value={email} className="inputField" onChange={(e) => setEmail(e.target.value)} /><br />
+          <label>Employee Department</label><br />
+          <input type="text" value={dept} className="inputField" onChange={(e) => setDept(e.target.value)} /><br />
+          <button type="submit" className="submitBtn">Submit</button>
         </form>
-
-        {/* Success/Error Alert */}
+        {/* Conditional message rendering */}
         {statusMessage && (
-          <Alert severity={isError ? "error" : "success"} sx={{ mt: 3 }}>
+          <p style={{ color: isError ? "red" : "green", marginTop: "10px" }}>
             {statusMessage}
-          </Alert>
+          </p>
         )}
-      </Container>
+      </div>
     </div>
   );
 };

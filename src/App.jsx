@@ -10,6 +10,7 @@ import Template from './Template'
 import TrainDataRender from './TrainDataRender'
 import Employee from './Employee'
 import Circuit from './Circuit'
+import StudentRegistrationForm from './StudentRegistrationForm'
 
 export const App = () => {
   return (
@@ -20,8 +21,9 @@ export const App = () => {
 {/* <Template/> */}
       {/* <UserPage/> */}
       {/* <TrainDataRender/> */}
-      <Employee/>
+      {/* <Employee/> */}
       {/* <Circuit/> */}
+       <StudentRegistrationForm></StudentRegistrationForm>
     </div>
   )
 }

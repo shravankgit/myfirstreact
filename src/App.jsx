@@ -11,7 +11,8 @@ import TrainDataRender from './TrainDataRender'
 import Employee from './Employee'
 import Circuit from './Circuit'
 import StudentRegistrationForm from './StudentRegistrationForm'
-
+import MultiState from './MultiState'
+import Counter from './Counter'
 export const App = () => {
   return (
     <div className= "contain">
@@ -23,7 +24,9 @@ export const App = () => {
       {/* <TrainDataRender/> */}
       {/* <Employee/> */}
       {/* <Circuit/> */}
-       <StudentRegistrationForm></StudentRegistrationForm>
+      <MultiState/>
+      {/* <Counter/> */}
+       {/* <StudentRegistrationForm></StudentRegistrationForm> */}
     </div>
   )
 }

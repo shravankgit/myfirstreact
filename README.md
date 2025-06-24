@@ -157,10 +157,23 @@ npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
 npm install @mui/icons-material
 
 
+<!-- useReducer Hook -->
 
+manage multiple states reducer hook
+ State Management 
 
+useState Hook : update individual states
 
+useReducer Hook : update multiple states once
 
+Redux : External library
 
+useReducer:example state management
 
+api call
+api Response (success)
+loading
+Error
+(one level manage and update)
 
+const [state, dispach]= usereducer(function,initialState)

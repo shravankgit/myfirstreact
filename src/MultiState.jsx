@@ -42,14 +42,27 @@ const MultiState = () => {
 
     useEffect(() => {
         console.log(dataHandlear());
-
     }, [])
 
 
     return (
         <div>
             {state.loading && <p>Loading</p>}
-            {/* {state.data && <div><div/>  } */}
+            {
+                state.data && (
+                    <div>
+                        {state.data.map((item) => {
+                            return (
+                                <div key={item.id}>
+                                    <h2>{item.name}</h2>
+                                </div>
+                            )
+                        })}
+                    </div>
+                )
+            }
+            {state.error && <div> {alert(state.error)} </div>}
+            
         </div>
     )
 }
